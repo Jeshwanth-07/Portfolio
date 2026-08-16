@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Jeshwanth's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.custom-icon-container {
+				display: inline-block;
+				position: relative;
+			}
+			.custom-icon-container a {
+				border-bottom: none;
+				text-decoration: none;
+			}
+			.custom-icon-img {
+				width: 60px;
+				height: 60px;
+				border-radius: 50%;
+				object-fit: contain;
+				transition: transform 0.3s ease-in-out;
+				padding: 8px;
+				background-color: rgba(255, 255, 255, 0.1);
+			}
+			.custom-icon-container:hover .custom-icon-img {
+				transform: scale(1.2);
+			}
+
+			#intro {
+				overflow: hidden;
+			}
+
+			#intro h1 {
+				font-size: clamp(2.8rem, 7vw, 5rem);
+				line-height: 1.05;
+				word-break: break-word;
+			}
+
+			#intro p {
+				max-width: 60rem;
+				margin-left: auto;
+				margin-right: auto;
+				word-break: break-word;
+			}
+
+			#intro .actions {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				gap: 0.75rem;
+				list-style: none;
+				padding: 0;
+				margin: 1rem auto 0;
+				width: 100%;
+			}
+
+			#intro .actions li {
+				list-style: none;
+			}
+
+			#main > .posts > article .image,
+			#main > .posts > article .image img,
+			#main > .posts > article > a.image,
+			#main > .posts > article > a.image img {
+				display: block;
+				width: 100%;
+				max-width: 100%;
+				height: auto;
+				aspect-ratio: 16 / 10;
+				object-fit: cover;
+			}
+
+			#main > .posts > article {
+				overflow: hidden;
+			}
+
+			@media screen and (max-width: 736px) {
+				#intro {
+					padding: 3rem 1.25rem 2rem 1.25rem;
+					min-height: 75vh;
+				}
+
+				#intro h1 {
+					font-size: clamp(2.4rem, 11vw, 3.5rem);
+				}
+
+				#intro p {
+					font-size: clamp(0.95rem, 4vw, 1.1rem);
+				}
+
+				#intro .actions {
+					display: flex;
+					margin-top: 0.75rem;
+					gap: 0.6rem;
+				}
+
+				.custom-icon-img {
+					width: 46px;
+					height: 46px;
+					padding: 7px;
+				}
+
+				#main > .posts > article .image,
+				#main > .posts > article .image img,
+				#main > .posts > article > a.image,
+				#main > .posts > article > a.image img {
+					aspect-ratio: 4 / 3;
+				}
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Jeshwanth B<br />
+						Portfolio</h1>
+						<p>An aspiring data engineer well versed with SQL, Python, IICS, PL/SQL and PowerBI. <a href="https://www.linkedin.com/in/jeshwanthboddu073/" target="_blank"> <br />@linkedin</a>.</p>
+						<ul class="actions">
+					<li class="custom-icon-container"><a href="#header" class="scrolly" title="Python"><img src="images/pyth.png" alt="Python" class="custom-icon-img"></a></li>
+					<li class="custom-icon-container"><a href="#header" class="scrolly" title="Oracle PL/SQL"><img src="images/plsql.png" alt="PL/SQL" class="custom-icon-img"></a></li>
+					<li class="custom-icon-container"><a href="#header" class="scrolly" title="SQL"><img src="images/sqll.png" alt="SQL" class="custom-icon-img"></a></li>
+					<li class="custom-icon-container"><a href="#header" class="scrolly" title="IICS"><img src="images/iics.png" alt="IICS" class="custom-icon-img"></a></li>
+					<li class="custom-icon-container"><a href="#header" class="scrolly" title="PowerBI"><img src="images/pbi.png" alt="PowerBI" class="custom-icon-img"></a></li>
+						</ul>
+					</div>
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<span class="date">March 15, 2026</span>
+										<h2><a href="https://github.com/Jeshwanth-07/pl-sql-banking-datawarehouse" target="_blank">Banking Data Warehouse <br />
+										PL/SQL</a></h2>
+									</header>
+									<a href="https://github.com/Jeshwanth-07/pl-sql-banking-datawarehouse" target="_blank" class="image fit"><img src="images/Blue and Black Modern Brand Marketing Presentation.png" alt="" /></a>
+									<p>A multi-layered Oracle PL/SQL data warehouse built on the Medallion Architecture (Bronze → Silver) for a banking domain. The system handles full-cycle data ingestion from flat files, data cleaning and standardisation, live banking operations, and a persistent audit trail — all encapsulated inside structured PL/SQL packages.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jeshwanth-07/pl-sql-banking-datawarehouse" target="_blank" class="button">view</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">November 27, 2025</span>
+										<h2><a href="https://github.com/Jeshwanth-07/data-exploratory-project" target="_blank">Data Exploration<br />
+										MSSQL</a></h2>
+									</header>
+									<a href="https://github.com/Jeshwanth-07/data-exploratory-project" target="_blank" class="image fit"><img src="images/Orange and Black Bold Grunge Digital Marketing Presentation.png" alt="" /></a>
+									<p>This repository contains a structured SQL Server script designed to perform end-to-end exploratory analysis on a retail sales dataset modeled using a star schema. The script helps in understanding the dataset, validating its consistency, and generating foundational business insights before building dashboards or advanced analytical models.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jeshwanth-07/data-exploratory-project" target="_blank" class="button">view</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 5, 2025</span>
+										<h2><a href="https://github.com/Jeshwanth-07/Sorting-Visualiser-Project" target="_blank">Sorting Visualizer<br />
+										Python</a></h2>
+									</header>
+									<a href="https://github.com/Jeshwanth-07/Sorting-Visualiser-Project" target="_blank" class="image fit"><img src="images/Black and White Monochrome Brush Stroke Creative Brief Presentation.png" alt="" /></a>
+									<p>This is a Python+Pygame-based sorting algorithm visualizer that provides a fun and interactive way to learn how different sorting algorithms work. With smooth animations, gradient-colored bars, and real-time controls, it's perfect for students, educators, or anyone curious about how data gets sorted under the hood.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jeshwanth-07/Sorting-Visualiser-Project" target="_blank" class="button">view</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date">July 15, 2025</span>
+										<h2><a href="https://github.com/Jeshwanth-07/Automated-File-Manager" target="_blank">Automated File Manager<br />
+										Python </a></h2>
+									</header>
+									<a href="https://github.com/Jeshwanth-07/Automated-File-Manager" target="_blank" class="image fit"><img src="images/Yellow and Pink Dynamic Creative Brief Presentation.png" alt="" /></a>
+									<p>This project is a Python script that automates file organization by monitoring a designated folder (like your Downloads folder) and sorting incoming files into categorized subfolders such as Audio, Video, Images, Documents, Applications, and Archives..</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Jeshwanth-07/Automated-File-Manager" target="_blank" class="button">view</a></li>
+									</ul>
+								</article>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+						<section class="split contact">
+							<section class="alt">
+							
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">+91 92900 04854</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+<p>
+    <a href="mailto:jeshwanth732005@gmail.com">jeshwanth732005@gmail.com</a>
+</p>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+										<li><a href="https://www.linkedin.com/in/jeshwanthboddu073/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+							<section>
+								<h3></h3>
+								<p>
+									<a href="resume/Jeshwanth_Data_Engineer.pdf" download class="button">Download Resume</a>
+								</p>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Jeshwanth Boddu</li>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
