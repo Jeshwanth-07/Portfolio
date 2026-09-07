@@ -7,6 +7,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,500;1,600;1,700&display=swap" rel="stylesheet">
 		<style>
 			.custom-icon-container {
 				display: inline-block;
@@ -109,7 +112,69 @@
 				#main > .posts > article > a.image img {
 					aspect-ratio: 4 / 3;
 				}
+				/* Certificates */
+#certificates {
+	margin-top: 4rem;
+}
+
+#certificates > header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+#certificates > header h2 {
+	margin-bottom: 0;
+}
+
+#certificates .posts {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 4rem 4rem;
+}
+
+#certificates .posts article {
+	overflow: hidden;
+}
+
+#certificates .posts article .image,
+#certificates .posts article .image img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	aspect-ratio: 16 / 10;
+	object-fit: cover;
+}
+
+/* Mobile */
+@media screen and (max-width: 736px) {
+	#certificates {
+		margin-top: 3rem;
+	}
+
+	#certificates .posts {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	#certificates .posts article .image,
+	#certificates .posts article .image img {
+		aspect-ratio: 4 / 3;
+	}
+}
 			}
+			/* Certificates heading */
+#certificates .certificates-heading {
+	text-align: center;
+	width: 100%;
+	margin-bottom: 3rem;
+}
+
+#certificates .certificates-heading h2 {
+	text-align: center;
+	margin-bottom: 0;
+}
+
 		</style>
 	</head>
 	<body class="is-preload">
@@ -187,6 +252,78 @@
 								</article>
 								
 							</section>
+							
+							</section>
+<!-- Certificates -->
+<section id="certificates">
+
+	<header class="certificates-heading">
+		<h2>Certificates</h2>
+	</header>
+
+	<section class="posts">
+
+		<!-- Certificate 1 -->
+		<article>
+			<header class="certificate-title">
+				<h2>HackerRank SQL Advanced Certificate</h2>
+			</header>
+
+			<a href="images/sql_adv_cert.png" target="_blank" class="image fit">
+				<img src="images/sql_adv_cert.png" alt="HackerRank SQL Advanced Certificate" />
+			</a>
+		</article>
+
+		<!-- Certificate 2 -->
+		<article>
+			<header class="certificate-title">
+				<h2>HackerRank SQL Intermediate Certificate</h2>
+			</header>
+
+			<a href="images/sql_inter_cert.png" target="_blank" class="image fit">
+				<img src="images/sql_inter_cert.png" alt="HackerRank SQL Intermediate Certificate" />
+			</a>
+		</article>
+
+		<!-- Certificate 3 -->
+		<article>
+			<header class="certificate-title">
+				<h2>HackerRank SQL Basic Certificate</h2>
+			</header>
+
+			<a href="images/sql_basic_cert.png" target="_blank" class="image fit">
+				<img src="images/sql_basic_cert.png" alt="HackerRank SQL Basic Certificate" />
+			</a>
+		</article>
+
+		<!-- Certificate 4 -->
+		<article>
+			<header class="certificate-title">
+				<h2>Smart Interviews DSA Certificate</h2>
+			</header>
+
+			<a href="images/SI_certificate.png" target="_blank" class="image fit">
+				<img src="images/SI_certificate.png" alt="Smart Interviews DSA Certificate" />
+			</a>
+		</article>
+
+		<!-- Certificate 5 -->
+		<article>
+			<header class="certificate-title">
+				<h2>SkillUp Python Data Structures &amp; Algo</h2>
+			</header>
+
+			<a href="images/dsa_py_cert.png" target="_blank" class="image fit">
+				<img src="images/dsa_py_cert.png" alt="SkillUp Python Data Structures and Algorithms Certificate" />
+			</a>
+		</article>
+
+	</section>
+
+</section>
+					</div>
+
+				<!-- Footer -->
 
 					</div>
 
